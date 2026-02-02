@@ -35,8 +35,6 @@ export const dbs = [
   "Mysql",
   "MongoDB",
   "Supabase",
-  // "Firebase",
-  ,
 ];
 
 export const coreSubjects = [
@@ -50,10 +48,7 @@ export const coreSubjects = [
 
 export const frameworks = [
   "React",
-  // "Node.js",
-  // "Express.js",
-  // "Next.js",
-  // "Tailwind CSS",
+  "Tailwind CSS",
   "Bootstrap",
 ];
 
