@@ -6,7 +6,7 @@ export const HomeSection: React.FC = () => {
   return (
     <>
       <div className={`select-none w-full h-50 absolute top-50 left-0`}>
-        <TextHoverEffect text="TECHNOPHILE" automatic />
+        <TextHoverEffect text="THE HACKER" automatic />
       </div>
       <div className="flex flex-col items-center justify-center h-full text-center space-y-8">
 

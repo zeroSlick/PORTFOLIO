@@ -6,7 +6,7 @@ import { Intro } from "../components/Intro";
 import { Dock } from '../components/Dock';
 import { GrungeOverlay } from '../components/GrungeOverlay';
 import { TopRightConnect } from '../components/TopRightConnect';
-import { Home as HomeIcon, User, FileText, FolderOpen, Trophy } from 'lucide-react';
+import { Home as HomeIcon, User, FileText, FolderOpen, Trophy, Award } from 'lucide-react';
 import { NavItem } from '../types';
 
 // Import Section Components
@@ -16,6 +16,7 @@ import { JourneySection } from '../components/sections/JourneySection';
 import { SkillsSection } from '../components/sections/SkillsSection';
 import { ProjectsSection } from '../components/sections/ProjectsSection';
 import { ResumeSection } from '../components/sections/ResumeSection';
+import { CertificationsSection } from '../components/sections/CertificationsSection';
 
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
@@ -128,6 +129,7 @@ export default function Home() {
         </div>
     },
     { id: 'skills', label: 'Skills', icon: <Trophy size={22} /> },
+    { id: 'certifications', label: 'Certifications', icon: <Award size={22} /> },
     { id: 'projects', label: 'Projects', icon: <FolderOpen size={22} /> },
     { id: 'resume', label: 'Resume', icon: <FileText size={22} /> },
     {
@@ -209,27 +211,31 @@ export default function Home() {
 
         <main className="relative z-10 w-full flex flex-col pb-24">
 
-          <section id="home" className="min-h-screen flex items-center justify-center p-4">
+          <section id="home" className="min-h-[60vh] flex items-center justify-center py-6">
             <HomeSection />
           </section>
 
-          <section id="about" className="min-h-screen flex items-center justify-center p-4 bg-background/30 backdrop-blur-[2px]">
+          <section id="about" className="min-h-[60vh] flex items-center justify-center py-6 bg-background/30 backdrop-blur-[2px]">
             <AboutSection />
           </section>
 
-          <section id="journey" className="min-h-screen flex items-center justify-center p-4">
+          <section id="journey" className="min-h-[60vh] flex items-center justify-center py-6">
             <JourneySection />
           </section>
 
-          <section id="skills" className="min-h-screen flex items-center justify-center p-4 bg-background/30 backdrop-blur-[2px]">
+          <section id="skills" className="min-h-[60vh] flex items-center justify-center py-6 bg-background/30 backdrop-blur-[2px]">
             <SkillsSection />
           </section>
 
-          <section id="projects" className="min-h-screen flex items-center justify-center p-4">
+          <section id="certifications" className="min-h-[60vh] flex items-center justify-center py-6">
+            <CertificationsSection />
+          </section>
+
+          <section id="projects" className="min-h-[60vh] flex items-center justify-center py-6">
             <ProjectsSection />
           </section>
 
-          <section id="resume" className="min-h-[50vh] flex items-center justify-center p-4 mb-20">
+          <section id="resume" className="min-h-[50vh] flex items-center justify-center py-6 mb-8">
             <ResumeSection />
           </section>
 
