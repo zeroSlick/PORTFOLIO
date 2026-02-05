@@ -31,11 +31,13 @@ export const langs = [
   "CSS",
 ];
 
-export const dbs = [
-  "Mysql",
+export const dbs: string[] = [
   "MongoDB",
-  "Supabase",
+  "MySQL",
+  "PostgreSQL",
+  "Firebase",
 ];
+
 
 export const coreSubjects = [
   "Data Structures and Algorithms",
